@@ -1,16 +1,59 @@
-# smart_budget
+# Smart Budget App
 
-A new Flutter project.
+Smart Budget is a Flutter-based budgeting app that helps you manage your monthly expenses with a clean UI and real-time tracking using Firebase.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- Add and delete expenses
+- Visual budget usage bar
+- Set your own monthly budget
+- Data stored and synced via Firebase
+- Persistent budget settings using SharedPreferences
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
+## Setup Instructions
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 1. Clone the repository
+```bash
+git clone https://github.com/BrianChen26/smart_budget.git
+cd smart_budget
+```
+
+### 2. Install dependencies
+```bash
+flutter pub get
+```
+
+### 3. Firebase Setup
+This project uses Firebase but does not include sensitive API keys. To run the app:
+
+Android:
+Place your google-services.json file in android/app/
+
+iOS:
+Place your GoogleService-Info.plist in ios/Runner/
+
+Dart config:
+Generate firebase_options.dart via:
+
+```bash
+flutterfire configure
+```
+
+### 4. Running the App
+```bash
+flutter run -d chrome
+```
+
+Or on other devices (macOS, Android, etc.):
+```bash
+flutter run
+```
+
+## Contribution
+Pull requests are welcome! Make sure to test your changes and follow clean Flutter coding practices.
+
+## License
+https://choosealicense.com/licenses/mit/
